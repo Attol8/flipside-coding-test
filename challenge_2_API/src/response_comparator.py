@@ -12,7 +12,8 @@ class ResponseComparator:
             self.response2 = requests.get(url2)
             self.response2_json = requests.get(url2).json()
         except requests.exceptions.RequestException as e:
-            print(f'error: {e}')   
+            print(f'error: {e}')
+            print('')   
        
 
     def ordered(self, obj):
